@@ -26,6 +26,7 @@ System.out.println("Default value of double:"+dv.d);
 
 # OUTPUT
 ![output of primitive](exp1a.png) 
+
 ## TITLE : 1b.) Display Quadratic Equation
 ```
 import java.util.Scanner;
