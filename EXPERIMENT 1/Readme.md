@@ -62,4 +62,4 @@ System.out.println("Root2"+real+"-i"+imaginary);
 ```
 
 # OUTPUT
-![output of quadratic equation](exp1b.png)
+![EXPERIMENT 1 OUTPUT](exp1b.png)
