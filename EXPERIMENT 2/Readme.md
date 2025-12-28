@@ -30,24 +30,52 @@ System.out.println("Perimeter of Square: " + perimeter);
 ## TITLE :2b.)Method overloading
 ``` java 
 class Add {
- int add(int a, int b) {
+int add(int a, int b)
+ {
 return a + b;
-    }
-    double add(double a, double b) {
+ }
+double add(double a, double b)
+ {
  return a + b;
  }
-    int add(int a, int b, int c) {
-  return a + b + c;
-    }
+int add(int a, int b, int c) {
+return a + b + c;
+}
 }
 class Main {
-    public static void main(String[] args) {
-        Add a = new Add();
-        System.out.println("Addition of 2 integers: " + a.add(1, 2));
-        System.out.println("Addition of real numbers: " + a.add(3.567, 4.865));
-        System.out.println("Addition of 3 integers: " + a.add(40, 50, 60));
-    }
+public static void main(String[] args) {
+Add a = new Add();
+ System.out.println("Addition of 2 integers: " + a.add(1, 2));
+System.out.println("Addition of real numbers: " + a.add(3.567, 4.865));
+System.out.println("Addition of 3 integers: " + a.add(40, 50, 60));
+}
 }
 ```
 # OUTPUT
 ![EXPERIMENT 2 OUTPUT](exp2b.png)
+
+
+## TITLE :2c.) Implement constructor
+``` java
+class Student {
+String name;
+int age;
+int marks;
+ Student(String n, int a, int m) {
+name = n;
+age = a;
+marks = m;
+ }
+void display() {
+System.out.println("Student name: " + name);
+System.out.println("Student age: " + age);
+System.out.println("Student marks: " + marks);
+}
+public static void main(String[] args){
+Student s1 = new Student("anusha", 20, 85);
+s1.display();
+}
+}
+```
+# OUTPUT
+![EXPERIMENT 2 C OUTPUT](exp2c.png)
