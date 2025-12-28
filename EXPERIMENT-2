@@ -1,1 +1,26 @@
-# JavaLab-CSE-F
+#EXPERIMENT 2
+## TITLE : 2a.) Implement class mechanism
+```
+class Square {
+int length;
+int areaOfSquare() {
+return length * length;
+}
+int perimeterOfSquare() {
+return 4 * length;
+}
+}
+class Main {
+public static void main(String[] args) {
+Square sq = new Square();
+sq.length = 5;
+int area = sq.areaOfSquare();
+int perimeter = sq.perimeterOfSquare();
+System.out.println("Area of a Square: " + area);
+System.out.println("Perimeter of Square: " + perimeter);
+}
+}
+```
+
+# OUTPUT
+![output of class mechanism](exp2a.output.png)
