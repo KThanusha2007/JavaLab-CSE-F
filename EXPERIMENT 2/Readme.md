@@ -28,7 +28,7 @@ System.out.println("Perimeter of Square: " + perimeter);
 
 
 ## TITLE :2b.)Method overloading
-```java
+``` java 
 class Add {
  int add(int a, int b) {
 return a + b;
@@ -48,6 +48,6 @@ class Main {
         System.out.println("Addition of 3 integers: " + a.add(40, 50, 60));
     }
 }
-
-#OUTPUT
+```
+# OUTPUT
 ![EXPERIMENT 2 OUTPUT](exp2b.png)
