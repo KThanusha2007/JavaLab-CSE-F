@@ -30,6 +30,6 @@ s2.display();
 ```
 
 # OUTPUT 
-![output of constructor](exp 3a.output.png)
+![output of constructor](exp3a.png)
 
 
