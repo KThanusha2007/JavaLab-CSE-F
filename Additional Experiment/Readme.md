@@ -62,6 +62,7 @@ sc.close();
  }
 }
 ```
+![output of palindrome](expa3.png)
 
 # OUTPUT :
 1[output of palindrome](expa3.png)
