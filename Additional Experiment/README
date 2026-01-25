@@ -1,11 +1,12 @@
 # ADDITIONAL EXPERIMENT 1
 ## TITLE : 1) Insert a substring into mainstring
+
 ```
 import java.util.Scanner;
 class SubstringInsert {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String mainString;
+public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+String mainString;
         String subString;
         int position;
         System.out.print("Enter the main string: ");
@@ -32,6 +33,38 @@ class SubstringInsert {
 
 # OUTPUT
 ![output of substring](exp1.png)
+
+
+ ##TITLE : 3.) Determine if a string is a palindrome or not
+```
+import java.util.Scanner;
+class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String str = sc.nextLine();
+    int start = 0;
+    int end = str.length() - 1;
+boolean flag = true;
+while (start < end) {
+     if (str.charAt(start) != str.charAt(end)) {
+System.out.println("String is not a palindrome");
+flag = false;
+break;
+}
+  start++;
+end--;
+}
+if (flag) {
+System.out.println("String is a palindrome");
+}
+sc.close();
+ }
+}
+```
+
+# OUTPUT :
+1[output of palindrome](expa3.png)
 
 
 
