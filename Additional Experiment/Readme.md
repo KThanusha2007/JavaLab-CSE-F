@@ -35,7 +35,7 @@ String mainString;
 ![output of substring](exp1.png)
 
 
- ##TITLE : 3.) Determine if a string is a palindrome or not
+ ## TITLE : 3.) Determine if a string is a palindrome or not
 ```
 import java.util.Scanner;
 class Palindrome {
@@ -62,10 +62,34 @@ sc.close();
  }
 }
 ```
-![output of palindrome](expa3.png)
 
 # OUTPUT :
-1[output of palindrome](expa3.png)
+![output of palindrome](expa3.png)
+## TITLE : 4)To check a perfect number
+```
+import java.util.Scanner;
+class Perfect {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the positive number: ");
+        int num = sc.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= num / 2; i++) {
+            if (num % i == 0) {
+                sum += i;
+   }
+        }
+        if (sum == num && num != 0) {
+            System.out.println(num + " is a Perfect Number");
+        } else {
+            System.out.println(num + " is not a Perfect Number");
+        }
+sc.close();
+ }
+}
+```
+# OUTPUT :
+![output of perfect number](expa4.png)
 
 
 
