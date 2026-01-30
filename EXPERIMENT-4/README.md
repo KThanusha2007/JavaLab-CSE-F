@@ -28,13 +28,13 @@ this.yearOfJoining = yearOfJoining;
         System.out.println("Annual Salary: " + annualSalary);
         System.out.println("Year of Joining: " + yearOfJoining);
         System.out.println("National Insurance Number: " + nationalInsuranceNumber);
-    }
+ }
 }
 public class TestEmployee {
     public static void main(String[] args) {
         Employee emp1 = new Employee("Monitha Sree", 28, 55000.50, 2018, "NI12345");
         emp1.displayEmployeeDetails();
-    }
+ }
 }
 ```
 ![output of single inheritance](exp4a.png)
@@ -46,7 +46,7 @@ public class Bicycle {
  public void showBicycleInfo() {
  System.out.println("This is a bicycle with pedals.");
         System.out.println("Pedal Type: " + pedalType);
-    }
+ }
 }
 public class Motorbike extends Bicycle {
  int engineCapacity;
@@ -75,3 +75,40 @@ public class TestVehicle {
 }
 ```
 ![output of multi-level inheritance](exp4b.png)
+
+## TITLE :4c.)Construct the abstract class
+```java
+abstract class Figure {
+double dim1, dim2;
+  Figure(double dim1, double dim2) {
+  this.dim1 = dim1;
+  this.dim2 = dim2;
+ }
+ abstract double area();
+}
+class Rectangle extends Figure {
+    Rectangle(double length, double breadth) {
+  super(length, breadth);
+    }
+    double area() {
+        return dim1 * dim2;
+    }
+}
+class Triangle extends Figure {
+Triangle(double base, double height) {
+ super(base, height);
+}
+ double area() {
+ return 0.5 * dim1 * dim2;
+ }
+}
+public class TestFigure {
+    public static void main(String[] args) {
+        Figure f1 = new Rectangle(10, 5);
+        System.out.println("Area of Rectangle = " + f1.area());
+        Figure f2 = new Triangle(8, 6);
+        System.out.println("Area of Triangle = " + f2.area());
+    }
+}
+```
+![output of abstract class](exp4c.png)
