@@ -38,3 +38,40 @@ public class TestEmployee {
 }
 ```
 ![output of single inheritance](exp4a.png)
+
+## TITLE :4b.)Implement Multi-level Inheritance
+```java
+public class Bicycle {
+    String pedalType;
+ public void showBicycleInfo() {
+ System.out.println("This is a bicycle with pedals.");
+        System.out.println("Pedal Type: " + pedalType);
+    }
+}
+public class Motorbike extends Bicycle {
+ int engineCapacity;
+ public void showMotorbikeInfo() {
+ System.out.println("This motorbike has an engine.");
+ System.out.println("Engine Capacity: " + engineCapacity + " cc");
+  }
+}
+public class ElectricBike extends Motorbike {
+ int batteryCapacity;
+  public void showElectricBikeInfo() {
+  System.out.println("This electric bike has an electric motor and battery.");
+  System.out.println("Battery Capacity: " + batteryCapacity + " Wh");
+    }
+}
+public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+        eBike.pedalType = "Standard Pedals";
+        eBike.engineCapacity = 150;
+        eBike.batteryCapacity = 500;
+        eBike.showBicycleInfo();       
+        eBike.showMotorbikeInfo();      
+        eBike.showElectricBikeInfo();   
+    }
+}
+```
+![output of multi-level inheritance](exp4b.png)
