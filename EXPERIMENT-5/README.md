@@ -59,3 +59,38 @@ public class TestSort {
 ```
 OUTPUT :
 ![output of interface](exp5a.png)
+
+## TITLE: 5b.) Java program to implement Runtime Polymorphism
+```java// Parent Class
+class Vehicle {
+    void run() {
+        System.out.println("Vehicle is running");
+    }
+}
+class Car extends Vehicle {
+    void run() {
+        System.out.println("Car is running");
+    }
+}
+class Bike extends Vehicle {
+    void run() {
+        System.out.println("Bike is running");
+    }
+}
+public class TestVehicle {
+    public static void main(String args[]) {
+        Vehicle v;   
+        v = new Car();    
+        v.run();
+        v = new Bike();    
+        v.run();
+       v = new Vehicle(); 
+        v.run();
+    }
+}
+```
+
+OUTPUT :
+![output of runtime polymorphism](exp5b.png)
+
+
