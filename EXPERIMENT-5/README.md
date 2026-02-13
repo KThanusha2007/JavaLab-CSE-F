@@ -93,4 +93,21 @@ public class TestVehicle {
 OUTPUT :
 ![output of runtime polymorphism](exp5b.png)
 
+## TITLE : 5c.) Java program using StringBuffer to delete a character
+```java
+public class DeleteChars {
+    public static void main(String args[]) {
+        StringBuffer sb = new StringBuffer("Java Programming");
+        System.out.println("Original String: " + sb);
+        sb.deleteCharAt(4);
+        System.out.println("After deleting character at index 4: " + sb);
+        sb.delete(0, 4);
+        System.out.println("After deleting characters from index 0 to 4: " + sb);
+    }
+}
+```
+
+OUTPUT :
+![output of stringbuffer](exp5c.png)
+
 
