@@ -54,7 +54,7 @@ OUTPUT :
 
 
 ## TITLE- 8b.) Producer Consumer problem using java program
-```
+```java
 class SharedBuffer {
     private int[] buffer;
     private int count = 0;
@@ -184,7 +184,7 @@ OUTPUT :
 
 
 ## TITLE-8c.) User defined packages
-```
+```java
 package arithmetic;
 public class ArithmeticOperations {
     public int addition(int x, int y) {
